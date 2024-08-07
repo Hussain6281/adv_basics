@@ -1,3 +1,4 @@
+import 'package:adv_basics/src/screens/questionspage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -103,7 +104,9 @@ class _MyHomePageState extends State<MyHomePage> {
              const SizedBox(height: 30),
            ElevatedButton.icon(
             icon: const Icon(Icons.arrow_forward),
-            onPressed: (){}, label: const Text("click me"))
+            onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>const Questionspage()));
+            }, label: const Text("click me"))
           ],
         ),
       ),
